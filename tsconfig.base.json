@@ -1,0 +1,91 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "allowJs": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "ol": [
+        "node_modules/ol/src"
+      ],
+      "ol/*": [
+        "node_modules/ol/src/*"
+      ],
+      "basic-setup": [
+        "dist/basic-setup"
+      ],
+      "basic-setup/*": [
+        "dist/basic-setup/*"
+      ],
+      "ol-proj-setup": [
+        "dist/ol-proj-setup"
+      ],
+      "ol-proj-setup/*": [
+        "dist/ol-proj-setup/*"
+      ],
+      "custom-markers": [
+        "dist/custom-markers"
+      ],
+      "custom-markers/*": [
+        "dist/custom-markers/*"
+      ],
+      "simple-popup": [
+        "dist/simple-popup"
+      ],
+      "simple-popup/*": [
+        "dist/simple-popup/*"
+      ],
+      "custom-control": [
+        "dist/custom-control"
+      ],
+      "custom-control/*": [
+        "dist/custom-control/*"
+      ],
+      "docs": [
+        "dist/docs"
+      ],
+      "docs/*": [
+        "dist/docs/*"
+      ],
+      "clustered-features": [
+        "dist/clustered-features"
+      ],
+      "clustered-features/*": [
+        "dist/clustered-features/*"
+      ],
+      "geojson-rendering": [
+        "dist/geojson-rendering"
+      ],
+      "geojson-rendering/*": [
+        "dist/geojson-rendering/*"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  },
+  "include": [
+    "**/*.ts",
+    "node_modules/ol/**/*"
+  ],
+  "typeAcquisition": {
+    "exclude": [
+      "ol"
+    ]
+  }
+}
